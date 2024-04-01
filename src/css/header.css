@@ -1,0 +1,46 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+}
+
+.header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header .logo a {
+  color: white;
+  text-decoration: none;
+}
+
+.header .navigation a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.header .navigation a:hover {
+  background-color: #007bff;
+}
+
+.logout-button {
+  padding: 8px 15px;
+  background-color: #f44336; 
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-left: 10px; 
+}
+
+.logout-button:hover {
+  background-color: #d32f2f; 
+}

@@ -1,0 +1,119 @@
+/* General Body Styles */
+body, html {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../images/RegisterPageLogo.jpg') no-repeat center center;
+  background-size: cover;
+  opacity: 0.9;
+  z-index: -1;
+  
+}
+
+/* Centering Register Container */
+.register-container {
+  position: absolute;
+  top: 75%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  max-width: 800px;
+  padding: 80px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  z-index: 2;
+}
+
+/* Register Title */
+.register-title {
+  font-size: 4rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* Form Elements */
+.register-form-group input,
+.register-form-group select,
+.register-form-group button {
+  padding: 20px; /* Generous padding for ease of interaction */
+  border: 2px solid #E8E8E8; /* Subtle border color */
+  border-radius: 8px; /* Rounded corners but less than the container */
+  margin-bottom: 20px; /* Consistent vertical rhythm */
+  width: calc(100% - 40px); /* Account for padding in the total width */
+  font-size: 1.5rem; /* Legible font size */
+  color: #2643a2; /* Text color matches the title for consistency */
+  box-sizing: border-box; /* Include padding and border in the width */
+  background-color: #F9FAFB; /* Slightly off-white background for the inputs */
+  transition: border-color 0.2s ease-in-out;
+}
+
+.register-form-group input:focus,
+.register-form-group select:focus,
+.register-form-group button:focus {
+  border-color: #007bff; /* Highlight color when focused */
+  outline: none; /* Remove the default focus outline */
+}
+
+/* Placeholder Styles */
+.register-form-group input::placeholder {
+  color: #2643a2; /* Lighter color for placeholder text */
+  font-style: italic; /* Differentiate placeholder from input text */
+}
+
+/* Button Styles */
+.register-form-group button {
+  background-color: #007bff; /* Primary button color */
+  color: white;
+  font-weight: bold; /* Bold text for button to stand out */
+  letter-spacing: 0.5px; /* Slight spacing for readability */
+  cursor: pointer;
+}
+
+.register-form-group button:hover {
+  background-color: #0056b3;
+}
+
+.register-form-group button:active {
+  background-color: #003c7c;
+}
+
+/* Adjustments for Responsive Design */
+@media (min-width: 768px) {
+  .register-container {
+    margin-top: -250px; /* Half of height */
+    margin-left: -200px; /* Half of width */
+  }
+}
+
+/* Additional Styles for Controls and Buttons */
+.form-control {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.btn-register {
+  padding: 10px 20px;
+  margin-top: 20px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn-register:hover {
+  background-color: #0056b3;
+}
+
+.btn-register:active {
+  background-color: #003c7c;
+}
+
